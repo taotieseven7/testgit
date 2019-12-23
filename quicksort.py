@@ -1,3 +1,4 @@
+#快速排序法#
 def quick(l,left,right):
     i=left
     j=right
@@ -24,13 +25,12 @@ def quick(l,left,right):
     l[i]=key
     
     quick(l,0,i-1)
-    
     quick(l,i+1,right)
     print(l)
 
 
 #最差时间复杂度O(N2),平均时间复杂度O（NlogN）   
-l=[23,24,63,56]
+l=[27,24,63,56,59,0,1]
 
 #l=[13,2,56,24,8,7,9,23,63,13]
 
